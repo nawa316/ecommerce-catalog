@@ -16,9 +16,9 @@
 </template>
 
 <script>
-import NoProductDisplay from './components/NoProductDisplay.vue';
-import ProductDisplay from './components/ProductDisplay.vue';
-import LoadingView from './components/LoadingView.vue';
+import NoProductDisplay from '/components/NoProdutDisplay.vue';
+import ProductDisplay from '/components/ProductDisplay.vue';
+import LoadingView from '/components/LoadingView.vue';
 
 export default {
   name: 'App',

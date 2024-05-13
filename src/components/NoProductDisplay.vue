@@ -23,7 +23,7 @@ export default {
   top: 30%;
   width: 1034px;
   height: 580px;
-  background-image: url('./src/assets/images/sad-face.png');
+  background-image: url('/src/assets/images/sad-face.png');
   background-repeat: no-repeat;
   background-position: center;
   background-color: white;
