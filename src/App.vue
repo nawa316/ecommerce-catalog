@@ -3,13 +3,13 @@
     <div v-if="isLoading" class="background" style="background-color: #D8D7D7">
       <LoadingView v-if="isLoading"/>
     </div>
-    <div v-if="category === men && isLoading == false" class="background" style="background-color: #D6E6FF">
+    <div v-if="category === men && !isLoading" class="background" style="background-color: #D6E6FF">
       <ProductDisplay class="container" :men="men" :women="women" :title="title" :rating="rating" :price="price" :category="category" :description="description" :image="image" @clickedNew="nextProduct()"/>
   </div>
-  <div v-else-if="category === women && isLoading == false" class="background" style="background-color: #FDE2FF">
+  <div v-else-if="category === women && !isLoading" class="background" style="background-color: #FDE2FF">
       <ProductDisplay class="container" :men="men" :women="women" :title="title" :rating="rating" :price="price" :category="category" :description="description" :image="image" @clickedNew="nextProduct()"/>
   </div>
-  <div v-else-if="(category !== men || category !== women) && isLoading == false" class="background" style="background-color: #D8D7D7">
+  <div v-else-if="(category !== men || category !== women) && !isLoading" class="background" style="background-color: #D8D7D7">
       <NoProductDisplay class="container" @clickedNew="nextProduct()"/>
   </div>
   </div>
